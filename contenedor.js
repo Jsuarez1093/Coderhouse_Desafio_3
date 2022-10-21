@@ -42,16 +42,6 @@ class contenedor {
             throw new Error(error);
           }
     }
-/*         fs.promises.readFile(`./${this.path}`, 'utf-8')
-        .then(contenido  => { await
-            let jsonData = JSON.parse(contenido)
-            const filter =  jsonData.find((db) => db.id == idSearch)
-            return filter
-        })
-        .catch( err =>{
-            console.log('Error de lectura', err)
-        })
-    } */
 
     async getAll(){
         try {
@@ -91,10 +81,6 @@ class contenedor {
             console.log('Error al momento de escribir el archivo')
         }
     }
-    
-    
-
-
 }
 
 module.exports = contenedor
