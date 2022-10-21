@@ -99,24 +99,8 @@ class contenedor {
 
 module.exports = contenedor
 
-
-
-//getGreaterNumber()
 const fileName = "productos.txt"
 let Prod = new contenedor(fileName)
 Prod.getAll()
 
-//Productos.save("title4", 4000, "http4")
-//productosList.getById(2)
 
-//Productos.deleteById(1)
-//Productos.deleteAll()
-
-async function test1(){
-    const result = Prod.getAll()
-    const randomNumber =  Math.floor(Math.random() * result.length + 1);
-    idSelected = Prod.getById(randomNumber)
-    console.log(idSelected)
-}
-
-//test1()
