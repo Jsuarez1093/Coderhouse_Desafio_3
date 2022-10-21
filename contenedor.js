@@ -85,8 +85,4 @@ class contenedor {
 
 module.exports = contenedor
 
-const fileName = "productos.txt"
-let Prod = new contenedor(fileName)
-Prod.getAll()
-
 
